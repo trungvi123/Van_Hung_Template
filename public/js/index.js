@@ -11,15 +11,5 @@ $(document).ready(function () {
 
 })
 
-// big-circle
-var big_circle = document.querySelector('.big-circle')
-
-window.onscroll = ()=> {
-  if(document.body.scrollTop > 2100 || document.documentElement.scrollTop > 2100){
-    big_circle.style.transform =  'rotate(0)';
-  }else {
-    big_circle.style.transform =  'rotate(-90deg)';
-  }
-}
 
   
