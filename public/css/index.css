@@ -8,6 +8,9 @@ html {
     --primary-color-template :#035f20;
     --second-color-template :#b8ad15;
 
+    --font-heading: 'Bungee', cursive;
+
+    --text-shadow:2px 2px 2px rgba(212, 4, 253, 0.5),0px 3px 5px rgba(19, 219, 245, 0.5);
     --line :#e7e7e7;
 }
 
@@ -59,10 +62,15 @@ h2 {
 
 
 /*  */
-
+.header {
+    background-color: var(--primary-color-template);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .sologan {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     user-select: none;
@@ -72,7 +80,12 @@ h2 {
 .logo-box {
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 10px;
 }
+
+
 
 .logo {
     border: 1px solid;
@@ -82,14 +95,35 @@ h2 {
     background-color: #035f20;
 }
 
+.icon-link-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .icon-link-top i{
     padding: 10px;
     border-radius: 50%;
     color: white;
-    margin-right: 10px;
-    background-color: var(--primary-color-template);
+    margin-right: 5px;
+    font-size: 22px;
 }
 
+
+
+.slider {
+    position: relative;
+}
+
+
+
+.menu-right {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 99;
+}
+/*  
 .slider-right > div{
     padding: 15px;
     text-align: center;
@@ -101,59 +135,110 @@ h2 {
 .slider-right > div:hover {
     background: linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent);
     cursor: pointer;
+} */
+
+
+.major {
+    color: var(--primary-color-template) !important;
+    font-family: 'Bungee', cursive;
+    font-size: 45px;
+    font-weight: 700;
+    padding-left: 20px;
+    text-shadow: 2px 2px 2px rgba(212, 4, 253, 0.5),0px 3px 5px rgba(19, 219, 245, 0.5);
+
 }
+
+.company-name {
+    color: var(--primary-color-template) !important;
+    font-family: 'Bungee', cursive;
+    font-size: 90px;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(212, 4, 253, 0.5),0px 3px 5px rgba(19, 219, 245, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .thumnail {
     height: 750px;
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: center; */
-    margin-top: 50px;
     display: flex;
     justify-content: end;
     position: relative;
-    height: 650px;
+    height: 750px;
+    overflow: hidden;
 }
 
 .thumnail img {
     position: absolute;
+    z-index: -2;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    filter: brightness(50%);
     width: 100%;
     height: 100%;
-    z-index: -2;
+    object-position: bottom;
+    /* scale: 0.6; */
 }
+
+
+.img5 {
+    left: -185px;
+    bottom: -168px;
+    scale: 2;
+}
+
 
 .thumnail > div {
     width: 850px;
     /* background-color: aqua; */
     margin-top: 80px;
+    font-size: 20px;
     margin-right: 20px;
     text-align: center;
     
 }
 
-.thumnail > div > h1 {
-    font-size: 70px !important;
-    font-weight: 700;
-    z-index: 10;
-    color: white;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 
-}
 .thumnail > div > p {
-    color: white ;
+    color:black ;
     text-align: left;
     margin-left: 58px;
+    font-weight: 500;
     margin-top: 30px;
 }
 
-.company-name {
-    color: var(--second-color-template) !important;
+
+
+.bg-danhmuc {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    filter: brightness(120%);
 }
+
+
 
 
 .layer1,.layer2,.layer3 {
@@ -177,7 +262,7 @@ h2 {
 .layer-item {
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     width: 300px;
-    height: 300px;
+    height: 340px;
     background-color: #b8ad15;
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,11 +306,12 @@ h2 {
     gap: 15px;
 }
 
-.contact-icon-box {
+.contact-icon-box img{
+    scale: 1.2;
     cursor: pointer;
 }
 
-.contact-icon-box.sms,.contact-icon-box.local {
+/* .contact-icon-box.sms,.contact-icon-box.local {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,51 +325,90 @@ h2 {
 
 .contact-icon-box.local {
     background-color: var(--primary-color-template);
-}
+} */
 /*  */
 
 
 .big-circle {
     position: relative;
-    padding: 120px;
     border-radius: 100%;
-    border: 3px solid var(--primary-color-template);
+    /* border: 3px solid var(--primary-color-template); */
     transition: transform 0.5s ease-in;
+    padding: 80px;
 }
 
 .small-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    height: 450px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
+    position: relative;
+    /* background-color: #b8ad15; */
     /* border: 1px solid var(--primary-color-template); */
 }
-
-.small-circle img {
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    object-fit: contain;
-    background-color: #035f20;
+.bg-small-circle {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 220px;
+    z-index: 2;
+    /* top: 50%; */
+    /* transform: translate(-50%,-50%); */
+    /* width: 100%; */
+    /* z-index: -6; */
 }
+
+.logo-small-circle {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 230px;
+    z-index: 3;
+    border-radius: 50%;
+}
+
+.mid-circle {
+    padding: 90px;
+    /* background-color: #b8ad15; */
+    border-radius: 50%;
+    position: relative;
+}
+
+.mid-circle > img {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.circle-text > i {
+    color: gray;
+    font-size: 60px;
+}
+
+
 
 .circle-text {
     position: absolute;
     width: 120px;
     height: 120px;
-    background-color: var(--second-color-template);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    /* color: white; */
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.circle-text > img {
+    width: 100%;
 }
 
 .circle-text.item1{
@@ -516,4 +641,115 @@ h2 {
 .footer-mid a:hover{
     color: var(--primary-color-template);
     font-weight: 600;
+}
+
+
+
+.cate-responsive {
+    display: none;
+  
+}
+
+.down-up {
+    display: inline-block;
+    transition: transform 0.25s ease-in;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+
+
+.cate-responsive.show {
+    display: block;
+}
+
+.menu{
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-top: 20px;
+    width: 350px;
+    background-color: var(--primary-color-template);
+    transition: 0.5s;
+    transform: translateX(350px);
+    z-index: 999;
+}
+
+.menu-overlay{
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+    z-index: 998;
+    display: none;
+}
+
+.cate-list-responsive li{
+    border-bottom: 1px solid var(--line);
+    transition: 0.3s;
+    /*text-align: center;*/
+    padding-left: 25px;
+}
+.cate-list-responsive li:hover{
+    padding-left: 35px;
+    background: #FBF1E6;
+
+}
+.cate-list-responsive {
+    list-style: none;
+}
+.cate-list-responsive li:hover a{
+   color: #000000;
+
+}
+.cate-list-responsive li a{
+    display: block;
+    color: #fff;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bars {
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 40px;
+    color: var(--primary-color-template);
+}
+
+
+#open{
+    display: none;
+}
+.open{
+    height: 80px;
+    width: 80px;
+}
+.open i{
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-top: 25px;
+    padding: 15px 15px;
+    color: white;
+    z-index: 1000;
+}
+#open:checked ~ .menu{
+    transition: 0.5s;
+    transform: translateX(0);
+}
+
+#open:checked ~ .menu-overlay {
+    display: block;
+}
+
+#open:checked ~ .open i{
+    transition: 0.5s;
+    margin-left: 190px;
+    position: absolute;
 }

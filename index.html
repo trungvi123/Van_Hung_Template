@@ -24,48 +24,43 @@
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/index.css">
 </head>
 
 <body>
-    <section class="container-fluid pt-4">
+    <section class="container-fluid header">
         <div class="row">
             <div class="col-5">
-                <span class="sologan text-center w-75 d-block">Xây chất lượng, dựng niềm tin</span>
+                <span class="sologan text-center w-75 d-block">TẠO THÀNH CÔNG</span>
             </div>
             <div class="col-2">
-                <a class="icon-link-top " href=""><i class="fa-solid fa-phone-flip"></i>Hotline: 0983477563</a>
+                <a class="icon-link-top " href=""><i class="fa-solid fa-phone"></i>0983477563</a>
             </div>
             <div class="col-2">
-                <a class="icon-link-top" href=""><i class="fa-solid fa-phone-flip"></i>Hotline: 0983477563</a>
+                <a class="icon-link-top" href=""><i class="fa-solid fa-phone"></i>0983477563</a>
             </div>
             <div class="col-3">
-                <a class="icon-link-top" href=""><i class="fa-solid fa-envelope"></i>Email:
+                <a class="icon-link-top" href=""><i class="fa-solid fa-envelope"></i>
                     huynhvanhung2016tq@gmail.com</a>
             </div>
         </div>
     </section>
 
-    <section class="mt-3 container-fluid">
-        <div class="row justify-content-center" style="height: 70vh;">
-            <div class="col-2 logo-box">
-                <img class="logo" src="" alt="logo">
-            </div>
-            <div class="col-8 h-100">
+    <section class="mt-3 ">
+        <div class="d-flex w-100 justify-content-center" style="height: 80vh;">
+            <div class="h-100 slider w-100">
                 <div id="carouselExampleControls" class="carousel slide h-100" data-ride="carousel">
                     <div class="carousel-inner h-100">
                         <div class="carousel-item h-100 ">
-                            <img class="d-block w-100 h-100"
-                                src="https://cdn.pixabay.com/photo/2014/07/06/17/20/tractor-385681_960_720.jpg" alt="First slide">
+                            <img  class="d-block w-100 h-100" src="./public/img/slide.png" alt="First slide">
+                            
                         </div>
                         <div class="carousel-item h-100">
-                            <img class="d-block w-100 h-100"
-                                src="https://cdn.pixabay.com/photo/2019/09/16/12/53/model-4480916_960_720.jpg" alt="Second slide">
+                            <img  class="d-block w-100 h-100" src="./public/img/slide.png" alt="Second slide">
                         </div>
                         <div class="carousel-item h-100 active">
-                            <img class="d-block w-100 h-100"
-                                src="https://cdn.pixabay.com/photo/2016/01/13/14/16/factory-1137993_960_720.jpg" alt="Third slide">
+                            <img  class="d-block w-100 h-100" src="./public/img/slide.png" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -77,9 +72,13 @@
                         <!-- <span class="sr-only">Next</span> -->
                     </a>
                 </div>
-            </div>
-            <div class="col-2">
-                <div class="slider-right">
+
+
+                <div class="logo-box">
+                    <img class="logo" src="./public/img/logo.png" alt="logo">
+                </div>
+
+                <!-- <div class="slider-right">
                     <div>
                         <a href="">Sản Phẩm</a>
                     </div>
@@ -101,80 +100,131 @@
                     <div>
                         <a href="">quy trình</a>
                     </div>
-                </div>
+                </div> -->
+
+                <nav class="menu-right">
+                    <input type="checkbox" name="open" id="open">
+                    <label for="open" class="bars magictime">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <div class="menu-overlay" style="cursor: pointer;"></div>
+                    <div class="menu">
+                        
+                        <ul class="cate-list-responsive">
+                            <li>
+                                <a href="#">
+                                    <span><i class="fas fa-address-card"></i></span>
+                                    SẢN PHẨM
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa-solid fa-newspaper"></i></span>
+                                    DỊCH VỤ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa-sharp fa-solid fa-rectangle-list"></i></span>
+                                    CHÍNH SÁCH
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa-solid fa-file-video"></i></span>
+                                    VIDEO
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa-solid fa-newspaper"></i></span>
+                                    TIN TỨC
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa-solid fa-comment"></i></span>
+                                    LIÊN HỆ
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </nav>
             </div>
+
         </div>
     </section>
 
     <section class="">
         <div class="thumnail">
             <div>
-                <h1>CƠ KHÍ NÔNG NGHIỆP <span class="company-name">VĂN HÙNG</span></h1>
-                <p>
-                    Công ty chúng tôi chuyên về cơ khí nông nghiệp, chúng tôi là một doanh nghiệp đặc biệt tập trung vào việc cung cấp các giải pháp cơ khí và sản phẩm dịch vụ cho ngành nông nghiệp. 
-                    Công ty chúng tôi có những kỹ sư và chuyên gia giàu kinh nghiệm trong lĩnh vực cơ khí và hiểu rõ về yêu cầu và thách thức 
-                    của ngành nông nghiệp.
+                <p class="major">CƠ KHí NÔNG NGHIỆP</p>
+                <P class="company-name">VĂN HÙNG</P>
+                <p> Cơ khí nông nghiệp Văn Hùng là một đơn vị chuyên cung cấp máy móc nông nghiệp. Các sản Phẩm
+                    của chúng tôi cung cấp bao gồm máy rửa khoai lang, máy phân size các loại trái cây, băng truyền tải hàng lên xe...
                 </p>
             </div>
-            <img src="https://cdn.pixabay.com/photo/2014/12/25/20/16/transmission-580027_960_720.jpg" alt="">
+
+            <img src="./public/img/thumnail.jpg" alt="">
+
         </div>
     </section>
 
-    <section style="overflow: hidden;" class="mt-5 position-relative">
+    <section style="overflow: hidden;" class="pt-5 pb-5 position-relative">
+        <img class="bg-danhmuc" src="https://images.pexels.com/photos/1879296/pexels-photo-1879296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
         <div class="layer-list">
             <div class="layer1">
                 <div data-aos="flip-right" data-aos-duration="2000" class="layer-item">
                     <p class="layer-item-text">MÁY RỬA KHOAI LANG, CỦ CẢI, ...</p>
-                    <img class="w-100 h-100" src="https://images.pexels.com/photos/414579/pexels-photo-414579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <img class="w-100 h-100"
+                        src="https://namphuthai.com/wp-content/uploads/2018/10/Untitled-2-3.jpg"
+                        alt="">
                 </div>
             </div>
             <div class="layer2">
                 <div data-aos="flip-right" data-aos-duration="2000" class="layer-item">
-                    <img class="w-100 h-100" src="https://images.pexels.com/photos/414579/pexels-photo-414579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                    
+                    <img class="w-100 h-100"
+                        src="https://pms-vietnam.com/wp-content/uploads/2021/06/May-phan-co-san-pham-theo-trong-luong-tu-dong-1-600x600.jpg"
+                        alt="">
+
                     <p class="layer-item-text">MÁY PHÂN SIZE TRÁI CÂY</p>
                 </div>
                 <div data-aos="flip-right" data-aos-duration="2000" class="layer-item">
-                    <img class="w-100 h-100" src="https://images.pexels.com/photos/414579/pexels-photo-414579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                    
+                    <img class="w-100 h-100"
+                        src="https://bangchuyentai.com.vn/upload/images/bang-tai-hang-len-container(1).jpg"
+                        alt="">
+
                     <p class="layer-item-text">BĂNG CHUYỀN TẢI HÀNG LÊN XE</p>
                 </div>
             </div>
             <div class="layer3">
                 <div data-aos="flip-right" data-aos-duration="2000" class="layer-item">
-                    <img class="w-100 h-100" src="https://images.pexels.com/photos/414579/pexels-photo-414579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                    
+                    <img class="w-100 h-100"
+                        src="https://www.bangtaihang.com/hoanghung/5/images/phan-biet-bang-tai-gau-tai-vit-tai%205.jpg"
+                        alt="">
+
                     <p class="layer-item-text">DÂY CHUYỀN LỰA KHOAI LANG, VÍT TẢI, GẦU TẢI, ...</p>
                 </div>
                 <div data-aos="flip-right" data-aos-duration="2000" class="layer-item">
-                    <img class="w-100 h-100" src="https://images.pexels.com/photos/414579/pexels-photo-414579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                    
+                    <img class="w-100 h-100"
+                        src="https://cdn.muabannhanh.com/asset/frontend/img/gallery/2018/06/08/5b1a2761c282d_1528440673.jpg"
+                        alt="">
+
                     <p class="layer-item-text">CÁC LOẠI MÁY VƯỜN ƯƠM</p>
                 </div>
                 <div data-aos="flip-right" data-aos-duration="2000" class="layer-item">
-                    <img class="w-100 h-100" src="https://images.pexels.com/photos/414579/pexels-photo-414579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                    
+                    <img class="w-100 h-100"
+                        src="https://www.thacogroup.vn/storage/tin-tuc/220dc3a2y20chuye1bb81n20che1baa5n20de1baadp20c491e1bb8bnh20hc3acnh.jpg"
+                        alt="">
+
                     <p class="layer-item-text">SẢN PHẨM KHÁC</p>
                 </div>
             </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="2000" class="contact-list-icon ">
-            <div class="contact-icon-box">
-                <a href=""><img src="./public/img/icon/call.png" alt=""></a>
-            </div>
-            <div class="contact-icon-box">
-                <a href=""><img src="./public/img/icon/zalo-tron (1).png" alt=""></a>
-            </div>
-            <div class="contact-icon-box">
-                <a href=""><img src="./public/img/icon/messenger.png" alt=""></a>
-            </div>
-            <div class="contact-icon-box sms">
-                <a href=""><i class="fa-solid fa-comment-sms"></i></a>
-            </div>
-            <div class="contact-icon-box local">
-                <a href=""><i class="fa-solid fa-location-dot"></i></a>
-            </div>
-        </div>
+        
     </section>
 
     <section class="container primary-heading mt-5">
@@ -183,39 +233,58 @@
         <div class="line-full"></div>
     </section>
 
-    <section class="mt-5 pt-5">
+    <section class="mt-5 pt-5" style="position: relative;">
         <div class="mt-5" style="display: flex;
        justify-content: center;
        align-items: center;">
             <div class="big-circle mt-5">
-                <div class="small-circle">
-                    <img class="" src="" alt="logo">
+                <div class="mid-circle">
+                    <img style="position: absolute;" class="w-100" src="./public/img/mid-circle.png" alt="">
+                    <div class="small-circle">
+                        <img class="logo-small-circle " src="./public/img/logo.png" alt="logo">
+                        <img class="bg-small-circle" src="./public/img/minicir.png" alt="">
+                    </div>
                 </div>
+                
                 <div class="circle-text item1">
-                    Khảo sát
+                    <img style="position: absolute;" src="./public/img/circle.png" alt="">
+                    <i class="fa-solid fa-list-check"></i>
                 </div>
                 <div class="circle-text item2">
-                    Tư vấn
+                    <img style="position: absolute;" src="./public/img/circle.png" alt="">
+                    <i class="fa-solid fa-calculator"></i>
                 </div>
                 <div class="circle-text item3">
-                    Cung cấp
+                    <img style="position: absolute;" src="./public/img/circle.png" alt="">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
                 </div>
                 <div class="circle-text item4">
-                    Gia công
+                    <img style="position: absolute;" src="./public/img/circle.png" alt="">
+                    <i class="fa-solid fa-gears"></i>
                 </div>
                 <div class="circle-text item5">
-                    Thiết kế
+                    <img style="position: absolute;" src="./public/img/circle.png" alt="">
+                    <i class="fa-solid fa-truck-fast"></i>
                 </div>
                 <div class="circle-text item6">
-                    Giao hàng
-                </div>
-                <div class="circle-text item7">
-                    Hướng dẫn
-                </div>
-                <div class="circle-text item8">
-                    Bảo hành
+                    <img style="position: absolute;" src="./public/img/circle.png" alt="">
+                    <i class="fa-solid fa-file-circle-check"></i>
                 </div>
 
+            </div>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="2000" class="contact-list-icon ">
+            <div class="contact-icon-box">
+                <a href=""><img src="./public/img/icon/twt.png" alt=""></a>
+            </div>
+            <div class="contact-icon-box">
+                <a href=""><img src="./public/img/icon/fb.png" alt=""></a>
+            </div>
+            <div class="contact-icon-box">
+                <a href=""><img src="./public/img/icon/ws.png" alt=""></a>
+            </div>
+            <div class="contact-icon-box">
+                <a href=""><img src="./public/img/icon/yt.png" alt=""></a>
             </div>
         </div>
     </section>
@@ -264,7 +333,7 @@
             </div>
             <div class="col-4">
                 <div class="why-choose-list reverse">
-                   <div data-aos="fade-right" data-aos-duration="2000">
+                    <div data-aos="fade-right" data-aos-duration="2000">
                         <div class="why-choose-item reverse">
                             <span>Nội dung sẽ được thêm vào,...</span>
                             <div class="contact-icon-box local">
@@ -293,7 +362,7 @@
                             </div>
                             <div class="mini-circle"></div>
                         </div>
-                   </div>
+                    </div>
                 </div>
             </div>
 
@@ -332,7 +401,8 @@
                 <div class="news">
                     <div class="news-slider">
                         <div class="news-slider-item">
-                            <img class="w-100" src="https://www.baolongan.vn/image/news/2019/20191209/images/101.jpg" alt="">
+                            <img class="w-100" src="https://www.baolongan.vn/image/news/2019/20191209/images/101.jpg"
+                                alt="">
                             <p class="news-slider-text">
                                 Tiêu đề của tin tức, tiêu đề của tin tức, tiêu đề của tin tức
                             </p>
@@ -345,20 +415,23 @@
                             </p>
                         </div>
                         <div class="news-slider-item">
-                            <img class="w-100" src="https://www.baolongan.vn/image/news/2019/20191209/images/101.jpg" alt="">
+                            <img class="w-100" src="https://www.baolongan.vn/image/news/2019/20191209/images/101.jpg"
+                                alt="">
                             <p class="news-slider-text">
                                 Tiêu đề của tin tức, tiêu đề của tin tức, tiêu đề của tin tức
                             </p>
                         </div>
                         <div class="news-slider-item">
-                            <img class="w-100" src="https://www.baolongan.vn/image/news/2019/20191209/images/101.jpg" alt="">
+                            <img class="w-100" src="https://www.baolongan.vn/image/news/2019/20191209/images/101.jpg"
+                                alt="">
                             <p class="news-slider-text">
                                 Tiêu đề của tin tức, tiêu đề của tin tức, tiêu đề của tin tức
                             </p>
                         </div>
                     </div>
                     <div class="news-hot">
-                        <img class="w-100 h-100" src="https://www.baolongan.vn/image/news/2019/20191209/images/101.jpg" alt="">
+                        <img class="w-100 h-100" src="https://www.baolongan.vn/image/news/2019/20191209/images/101.jpg"
+                            alt="">
                         <p class="news-slider-text hot">
                             Tiêu đề của tin tức, tiêu đề của tin tức, tiêu đề của tin tức
                         </p>
@@ -394,9 +467,8 @@
         </div>
     </section>
 
-    <footer class="mt-5" data-aos="fade-up" style="box-shadow: 0 0 15px rgba(0,0,0,0.3);"
-    data-aos-duration="2000">
-        <div class="container footer h-100"  style="min-height: 400px;">
+    <footer class="mt-5" data-aos="fade-up" style="box-shadow: 0 0 15px rgba(0,0,0,0.3);" data-aos-duration="2000">
+        <div class="container footer h-100" style="min-height: 400px;">
             <h2 class="mb-5">CƠ KHÍ NÔNG NGHIỆP VĂN HÙNG</h2>
             <div class="row h-100">
                 <div class="col-5">
@@ -438,7 +510,7 @@
         </div>
     </footer>
 
-    <section  style="background-color: var(--primary-color-template); font-family: 'Lato';
+    <section style="background-color: var(--primary-color-template); font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;

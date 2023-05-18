@@ -12,4 +12,8 @@ $(document).ready(function () {
 })
 
 
-  
+var menu = document.querySelector('.menu-overlay')
+
+menu.onclick = ()=> {
+  document.querySelector('#open').checked = false;
+}
