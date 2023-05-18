@@ -538,11 +538,15 @@ h2 {
     margin-top: 10px;
     position: relative;
     cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .news-slider-item {
     margin-top: 10px;
     position: relative;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .news-slider-item img,
